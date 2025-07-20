@@ -1,7 +1,7 @@
 class NextpnrEcp5 < Formula
     desc "portable FPGA place-and-route tool"
     homepage "https://github.com/YosysHQ/nextpnr"
-    url "https://github.com/YosysHQ/nextpnr/archive/refs/tags/nextpnr-0.7.tar.gz"
+    url "https://github.com/YosysHQ/nextpnr/archive/refs/tags/nextpnr-0.8.tar.gz"
     head "https://github.com/YosysHQ/nextpnr.git"
   
     depends_on "cmake" => :build
@@ -10,7 +10,6 @@ class NextpnrEcp5 < Formula
     depends_on "python"
     depends_on "boost"
     depends_on "boost-python3"
-    depends_on "qt5"
     depends_on "prjtrellis"
   
     def install
