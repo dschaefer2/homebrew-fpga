@@ -17,7 +17,6 @@ class NextpnrEcp5 < Formula
           "-DARCH=ecp5", \
           "-DTRELLIS_INSTALL_PREFIX=#{HOMEBREW_PREFIX}", \
           *std_cmake_args, \
-          "-DBoost_NO_BOOST_CMAKE=on", \
           "-DBUILD_TESTS=OFF"
       system "cmake", "-B", "build", "install"
     end
