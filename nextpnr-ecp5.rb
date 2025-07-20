@@ -13,10 +13,10 @@ class NextpnrEcp5 < Formula
     depends_on "prjtrellis"
   
     def install
-      system "cmake", "-B", "build", \
-          "-DARCH=ecp5", \
-          "-DTRELLIS_INSTALL_PREFIX=#{HOMEBREW_PREFIX}", \
-          *std_cmake_args, 
+      system "cmake", "-B", "build", 
+          "-DARCH=ecp5", 
+          "-DTRELLIS_INSTALL_PREFIX=#{HOMEBREW_PREFIX}", 
+          *std_cmake_args
       system "cmake", "-B", "build", "--build", "--install"
     end
   
